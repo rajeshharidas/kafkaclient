@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -33,10 +34,10 @@ public class KafkaClientController {
 	@GetMapping(value = "/list")
 	public List<String> listMessages() {
 		
-		List<String> messages = new ArrayList();
-		int len = redisTemplate.opsForHash().size("lqp-messages");
-		for (int i=0; i < len; i++ ) {
-			messages.add(redisTemplate.opsForList().leftPop("lqp-messages"));			
+		List<String> messages = new ArrayList<String>();
+		long len = redisTemplate.opsForList().size("lqp-messages");
+		for (long i=0; i < len; i++ ) {
+			messages.add(redisTemplate.opsForList().leftPop("lqp-messages").toString());			
 		}
 		
 		return messages;

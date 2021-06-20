@@ -24,7 +24,7 @@ public class KafkaProducerConsumer
 	@KafkaListener(topics = AppConstants.TOPIC_NAME, groupId = AppConstants.GROUP_ID)
 	public void consume(String message) {
 		logger.info(String.format("Message recieved -> %s", message));
-		redisTemplate.opsForHash().leftPush("lpq-messages", message);
+		redisTemplate.opsForList().leftPush("lpq-messages", message);
 	}
 	
 	public void sendMessage(String message) 

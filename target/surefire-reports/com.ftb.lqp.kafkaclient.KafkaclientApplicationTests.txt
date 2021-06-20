@@ -1,11 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ftb.lqp.kafkaclient.KafkaclientApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.387 s <<< FAILURE! - in com.ftb.lqp.kafkaclient.KafkaclientApplicationTests
-contextLoads  Time elapsed: 0.002 s  <<< ERROR!
-java.lang.IllegalStateException: Failed to load ApplicationContext
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jedisConnectionFactory' defined in class path resource [com/ftb/lqp/kafkaclient/clientconfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'jedisConnectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.redis.connection.jedis.JedisConnectionFactory]: Factory method 'jedisConnectionFactory' threw exception; nested exception is java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
-Caused by: java.lang.NoClassDefFoundError: redis/clients/jedis/JedisClientConfig
-Caused by: java.lang.ClassNotFoundException: redis.clients.jedis.JedisClientConfig
-
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.816 s - in com.ftb.lqp.kafkaclient.KafkaclientApplicationTests
