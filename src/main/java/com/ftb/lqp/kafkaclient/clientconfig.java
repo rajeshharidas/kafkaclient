@@ -21,6 +21,5 @@ public class clientconfig {
 		    redisTemplate.afterPropertiesSet();
 		    return redisTemplate;
 	}
-	
 
 }
