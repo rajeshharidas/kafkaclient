@@ -1,6 +1,0 @@
-com/ftb/lqp/kafkaclient/clientconfig.class
-com/ftb/lqp/kafkaclient/AppConstants.class
-com/ftb/lqp/kafkaclient/KafkaClientController.class
-com/ftb/lqp/kafkaclient/KafkaclientApplication.class
-com/ftb/lqp/kafkaclient/KafkaProducerConsumer.class
-com/ftb/lqp/kafkaclient/ServletInitializer.class
