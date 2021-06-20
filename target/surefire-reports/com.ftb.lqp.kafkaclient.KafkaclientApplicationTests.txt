@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.ftb.lqp.kafkaclient.KafkaclientApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.816 s - in com.ftb.lqp.kafkaclient.KafkaclientApplicationTests
